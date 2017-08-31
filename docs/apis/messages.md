@@ -105,9 +105,9 @@ itchatmp.messages.send_all(TEXT, 'this is a sendall')
 ```python
 templateId = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 msgDict = {
-    'title': 'Title',
-    'user': 'User',
-    'content': 'Content', }
+    'title': {'value': 'Title'},
+    'user': {'value': 'User'},
+    'content': {'value': 'Content', 'color': '#173177'}, }
 toUserName = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 r = itchatmp.templatemsgs.send(templateId, msgDict, toUserName)
